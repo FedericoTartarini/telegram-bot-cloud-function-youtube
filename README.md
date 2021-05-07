@@ -2,6 +2,11 @@ create a Google Cloud Function running this command in the same line:
 ```
 gcloud functions deploy telegram_bot --set-env-vars "TELEGRAM_TOKEN=<TELEGRAM_TOKEN>" --runtime python38 --trigger-http --project=<project_name>
 ```
+you can also specify the region by appending the following string to the previous command
+```
+--region=<region_name>
+```
+[list of the available regions](https://cloud.google.com/compute/docs/regions-zones)
 
 Some details:
 
